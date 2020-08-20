@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useLaunchProfileQuery } from '../../generated/graphql';
 import LaunchDetails from './LaunchDetails';
 interface Props {
@@ -6,11 +6,7 @@ interface Props {
 }
 
 const LaunchDetailsContainer = ({ id }: Props) => {
-    const { data, error, loading, refetch } = useLaunchProfileQuery({ variables: { id: String(id) } });
-
-    useEffect(() => {
-        refetch();
-    }, [id])
+    const { data, error, loading } = useLaunchProfileQuery({ variables: { id: String(id) } });
     if (loading) {
         return <h1>Data is Loading...</h1>
     }
