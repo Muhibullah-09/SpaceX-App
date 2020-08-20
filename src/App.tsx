@@ -4,15 +4,20 @@ import LaunchDetails from './components/LaunchDetails';
 import './App.css'
 const App = () => {
 
-  const [id, setId] = useState(20);
-  const hanndleIdChange = useCallback(newId => {
-    setId(newId)
-  }, []);
+  const [id, setId] = useState(0);
+  const handleIdChange = () => {
+    setId(id + 1)
+  }
   return (
-    <div className="App">
-      <Launch handleIdChange={hanndleIdChange} />
-      <LaunchDetails id={id} />
-    </div>
+    <>
+      <div>
+        <button onClick={handleIdChange}>Change Flight No.</button>
+      </div>
+      <div className="App">
+        <Launch handleIdChange={handleIdChange} />
+        <LaunchDetails id={id} />
+      </div>
+    </>
   );
 }
 

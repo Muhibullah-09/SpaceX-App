@@ -13,7 +13,6 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
         <div className='launchDetails'>
             <div className='launchDetailsStatus'>
                 <span>Flight No.  {data.launch.flight_number} </span>
-                {/* <button onClick={(data.launch.flight_number+1)}>Change Flight Nummber</button> */}
             </div>
             <h1>
                 {data.launch.mission_name} - {data.launch.rocket?.rocket_name}
