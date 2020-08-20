@@ -13,6 +13,7 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
         <div className='launchDetails'>
             <div className='launchDetailsStatus'>
                 <span>Flight No.  {data.launch.flight_number} </span>
+                {/* <button onClick={(data.launch.flight_number+1)}>Change Flight Nummber</button> */}
             </div>
             <h1>
                 {data.launch.mission_name} - {data.launch.rocket?.rocket_name}
@@ -23,7 +24,7 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
                 <div className='LaunchProfile__image-list' >
                     {data.launch.links.flickr_images.map
                         (
-                            image => image ? <img className='LaunchProfile__image' src={image} /> : null
+                            image => image ? <img className='LaunchProfile__image' src={image} alt='launch mission images' /> : null
                         )
                     }
                 </div>
