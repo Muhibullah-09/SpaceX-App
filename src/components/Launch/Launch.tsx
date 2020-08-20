@@ -14,6 +14,8 @@ const Launch: React.FC<Props> = ({ data }) => {
                 {!!data.launches && data.launches.map(
                     (launch, i) => !!launch && (
                         <li key={i} className='Launches-item' >
+                            Flight No. -  {launch.flight_number}<br />
+                            <br />
                             Mission Name - {launch.mission_name}<br />
                             <br />
                             Launch Year - { launch.launch_year}<br />
