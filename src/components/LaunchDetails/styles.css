@@ -6,23 +6,14 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+h1,p{
+  color: aqua;
+}
 
 .launchDetailsStatus {
   margin-top: 40px;
 }
 
-.LaunchProfile__title {
-  margin-top: 0;
-  margin-bottom: 4px;
-}
-
-.LaunchProfile__success {
-  color: #2cb84b;
-}
-
-.LaunchProfile__failed {
-  color: #ff695e;
-}
 
 .LaunchProfile__image-list {
   display: grid;

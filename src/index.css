@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://cdn.vox-cdn.com/thumbor/ZMpaSzLf73O9Du59_zP8f7oeH1o=/0x0:1584x882/1200x0/filters:focal(0x0:1584x882):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/13105927/moon_loop.jpg');
 }
 
 code {
