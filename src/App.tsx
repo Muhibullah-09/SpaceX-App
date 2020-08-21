@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <div>
-        <button onClick={handleIdChange}>Change Flight No.</button>
+        <button onClick={handleIdChange}>Change Flight:{id}</button>
       </div>
       <div className="App">
         <Launch handleIdChange={handleIdChange} />

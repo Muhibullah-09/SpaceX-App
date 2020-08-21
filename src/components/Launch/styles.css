@@ -1,11 +1,10 @@
 .Launches {
   height: 100vh;
   overflow: hidden auto;
-  background-color: #ececec;
+  background-color: aqua;
   width: 300px;
   padding-left: 20px;
   padding-right: 20px;
-  position: relative;
 }
 
 .Launches-list {
