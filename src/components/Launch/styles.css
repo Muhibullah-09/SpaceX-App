@@ -5,6 +5,7 @@
   width: 300px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
 
 .Launches-list {
